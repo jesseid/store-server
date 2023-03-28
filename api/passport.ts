@@ -4,7 +4,7 @@ import passport from 'passport';
 import session from 'express-session';
 import createSQLiteSessionStore from 'connect-sqlite3';
 import { Strategy as LocalStrategy } from 'passport-local';
-import ChatServer from '../api/index';
+import ChatServer from './index';
 
 const secret = process.env.AUTH_SECRET || crypto.randomBytes(32).toString('hex');
 

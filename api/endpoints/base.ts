@@ -1,5 +1,5 @@
 import express from 'express';
-import ChatServer from '../../api/index';
+import ChatServer from '../index';
 
 export default abstract class RequestHandler {
     constructor(public context: ChatServer, private req: express.Request, private res: express.Response) {
