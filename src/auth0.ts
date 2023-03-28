@@ -1,6 +1,6 @@
 import crypto from 'crypto';
 import { auth, ConfigParams } from 'express-openid-connect';
-import ChatServer from './index';
+import ChatServer from '../api/index';
 
 const secret = process.env.AUTH_SECRET || crypto.randomBytes(32).toString('hex');
 
